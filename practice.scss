@@ -1,0 +1,32 @@
+$colorAqua:aqua;
+$colorWhite:white;
+$colorBlack:black;
+$small:20%;
+$smaller:10%;
+$min:5%;
+$firtRem:1rem;
+$bitRem:0.03rem;
+.card{
+    background-color: $colorAqua;
+    width: $small;
+    padding: $firtRem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &:hover{
+        background-color: $colorWhite;
+    }
+    
+    h1{
+        color: $colorBlack;
+    }
+    .p{
+        letter-spacing: $bitRem   ;
+        color: $colorBlack;
+        font-size: $firtRem + 0.2;
+    }
+
+    a{
+        color: $colorWhite;
+    }
+}

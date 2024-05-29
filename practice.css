@@ -1,0 +1,24 @@
+.card {
+  background-color: aqua;
+  width: 20%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.card:hover {
+  background-color: white;
+}
+.card h1 {
+  color: black;
+}
+.card .p {
+  letter-spacing: 0.03rem;
+  color: black;
+  font-size: 1.2rem;
+}
+.card a {
+  color: white;
+}
+
+/*# sourceMappingURL=practice.css.map */
