@@ -1,31 +1,42 @@
-$colorAqua:aqua;
-$colorWhite:white;
-$colorBlack:black;
-$small:20%;
-$smaller:10%;
-$min:5%;
-$firtRem:1rem;
-$bitRem:0.03rem;
-.card{
-    background-color: $colorAqua;
+@import  'variables';
+
+
+@mixin firt($bgDefault:rgb(0, 0, 0) , $txtColor:rgb(198, 198, 198)){
+    background-color: $bgDefault;
+    color: $txtColor;
     width: $small;
     padding: $firtRem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    &:hover{
-        background-color: $colorWhite;
-    }
+    border-radius: .5rem;
+    border: solid $colorWhite 1px;
+}
+
+body{
+    background: #000;
+}
+
+.card{
+    @include firt( );
+    // background-color: $colorAqua;
     
     h1{
-        color: $colorBlack;
+        color: $colorWhite;
     }
     .p{
         letter-spacing: $bitRem   ;
-        color: $colorBlack;
+        // color: $colorBlack;
         font-size: $firtRem + 0.2;
     }
+    a{
+        color: $colorWhite;
+    }
 
+}
+
+.card2{
+    @include firt($bgDefault:rgba(232, 232, 232, 0.884),$txtColor:rgb(36, 36, 36) );
     a{
         color: $colorWhite;
     }
